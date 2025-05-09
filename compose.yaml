@@ -1,0 +1,4 @@
+include:
+  - WalletCoreService/docker-compose.yaml
+  - WalletBalanceService/compose.yaml
+
