@@ -5,7 +5,7 @@ services:
       balances_db:
         condition: service_healthy
     ports:
-      - "8082:8080"
+      - "3003:8080"
     environment:
       KAFKA__BootstrapServers: kafka:29092
       KAFKA__Topic: balances
