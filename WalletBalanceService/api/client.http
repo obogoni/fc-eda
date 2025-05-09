@@ -4,3 +4,14 @@ GET http://localhost:8082/balances/b8851416-a486-465f-bc14-00dd2eab30c9 HTTP/1.1
 ###
 
 GET http://localhost:8082/balances/91c61fd4-0e44-4bda-9b7e-1a4083c019ea HTTP/1.1
+
+###
+
+POST http://localhost:8080/transactions HTTP/1.1
+Content-Type: application/json
+
+{
+    "account_id_from": "b8851416-a486-465f-bc14-00dd2eab30c9",
+    "account_id_to": "91c61fd4-0e44-4bda-9b7e-1a4083c019ea",
+    "amount": 1
+}
